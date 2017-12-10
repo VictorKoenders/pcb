@@ -77,7 +77,7 @@ F 1 "C" H 2475 2350 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D7.5mm_P2.50mm" H 2488 2300 50  0001 C CNN
 F 3 "" H 2450 2450 50  0001 C CNN
 	1    2450 2450
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L C C1
@@ -88,7 +88,7 @@ F 1 "C" H 2475 2150 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D7.5mm_P2.50mm" H 2488 2100 50  0001 C CNN
 F 3 "" H 2450 2250 50  0001 C CNN
 	1    2450 2250
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Conn_01x01 J3
@@ -101,7 +101,6 @@ F 3 "" H 4250 2300 50  0001 C CNN
 	1    4250 2300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2250 1400
 $Comp
 L R R1
 U 1 1 5A2C08D3
@@ -282,4 +281,9 @@ F 3 "" H 1950 2750 50  0001 C CNN
 	1    1950 2750
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	2250 1400 2300 1400
+Wire Wire Line
+	2300 1400 2300 1300
+Connection ~ 2300 1300
 $EndSCHEMATC
