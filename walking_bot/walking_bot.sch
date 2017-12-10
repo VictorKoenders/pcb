@@ -1,0 +1,203 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:GTB
+LIBS:walking_bot-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 58A7503B
+P 3800 6150
+F 0 "#PWR01" H 3800 5900 50  0001 C CNN
+F 1 "GND" H 3800 6000 50  0000 C CNN
+F 2 "" H 3800 6150 50  0000 C CNN
+F 3 "" H 3800 6150 50  0000 C CNN
+	1    3800 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SERVO S1
+U 1 1 58A751DF
+P 5700 1800
+F 0 "S1" H 5700 1600 60  0000 C CNN
+F 1 "SERVO" H 5700 2300 60  0000 C CNN
+F 2 "" H 5700 1800 60  0001 C CNN
+F 3 "" H 5700 1800 60  0001 C CNN
+	1    5700 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L SERVO S2
+U 1 1 58A75392
+P 5700 2650
+F 0 "S2" H 5700 2450 60  0000 C CNN
+F 1 "SERVO" H 5700 3150 60  0000 C CNN
+F 2 "" H 5700 2650 60  0001 C CNN
+F 3 "" H 5700 2650 60  0001 C CNN
+	1    5700 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L SERVO S3
+U 1 1 58A753DA
+P 5700 3500
+F 0 "S3" H 5700 3300 60  0000 C CNN
+F 1 "SERVO" H 5700 4000 60  0000 C CNN
+F 2 "" H 5700 3500 60  0001 C CNN
+F 3 "" H 5700 3500 60  0001 C CNN
+	1    5700 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L SERVO S4
+U 1 1 58A75482
+P 5700 4400
+F 0 "S4" H 5700 4200 60  0000 C CNN
+F 1 "SERVO" H 5700 4900 60  0000 C CNN
+F 2 "" H 5700 4400 60  0001 C CNN
+F 3 "" H 5700 4400 60  0001 C CNN
+	1    5700 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L SERVO S5
+U 1 1 58A754C6
+P 5700 5250
+F 0 "S5" H 5700 5050 60  0000 C CNN
+F 1 "SERVO" H 5700 5750 60  0000 C CNN
+F 2 "" H 5700 5250 60  0001 C CNN
+F 3 "" H 5700 5250 60  0001 C CNN
+	1    5700 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L STM32F103 STM1
+U 1 1 58A75B2C
+P 2500 3000
+F 0 "STM1" V 2550 3350 60  0000 C CNN
+F 1 "STM32F103" V 2550 2450 60  0000 C CNN
+F 2 "" H 2500 3000 60  0001 C CNN
+F 3 "" H 2500 3000 60  0001 C CNN
+	1    2500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 58A77C6D
+P 3650 6150
+F 0 "#PWR02" H 3650 6000 50  0001 C CNN
+F 1 "+5V" H 3650 6290 50  0000 C CNN
+F 2 "" H 3650 6150 50  0000 C CNN
+F 3 "" H 3650 6150 50  0000 C CNN
+	1    3650 6150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 1950 3650 6150
+Wire Wire Line
+	3650 2350 3050 2350
+Connection ~ 3650 2350
+Wire Wire Line
+	5350 2800 3650 2800
+Connection ~ 3650 2800
+Wire Wire Line
+	5350 3650 3650 3650
+Connection ~ 3650 3650
+Wire Wire Line
+	5350 4550 3650 4550
+Connection ~ 3650 4550
+Wire Wire Line
+	5350 5400 3650 5400
+Connection ~ 3650 5400
+Wire Wire Line
+	3800 5600 5350 5600
+Wire Wire Line
+	3800 2150 3800 6150
+Wire Wire Line
+	5350 2150 3800 2150
+Connection ~ 3800 2250
+Connection ~ 3800 3000
+Wire Wire Line
+	5350 3850 3800 3850
+Connection ~ 3800 3850
+Wire Wire Line
+	5350 4750 3800 4750
+Connection ~ 3800 4750
+Wire Wire Line
+	5350 5250 3150 5250
+Wire Wire Line
+	3150 5250 3150 3050
+Wire Wire Line
+	3150 3050 3050 3050
+Wire Wire Line
+	5350 4400 3250 4400
+Wire Wire Line
+	3250 4400 3250 2950
+Wire Wire Line
+	3250 2950 3050 2950
+Wire Wire Line
+	5350 3500 3350 3500
+Wire Wire Line
+	3350 3500 3350 2850
+Wire Wire Line
+	3350 2850 3050 2850
+Wire Wire Line
+	5350 2650 3350 2650
+Wire Wire Line
+	3350 2650 3350 2750
+Wire Wire Line
+	3350 2750 3050 2750
+Wire Wire Line
+	5350 1800 3250 1800
+Wire Wire Line
+	3250 1800 3250 2650
+Wire Wire Line
+	3250 2650 3050 2650
+Connection ~ 3800 5600
+Wire Wire Line
+	3050 2250 3800 2250
+Wire Wire Line
+	5350 1950 3650 1950
+Wire Wire Line
+	5350 3000 3800 3000
+$EndSCHEMATC
