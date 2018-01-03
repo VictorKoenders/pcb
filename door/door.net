@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source D:/kiCAD/door/door.sch)
-    (date "10-Dec-17 8:53:03 PM")
-    (tool "Eeschema 4.0.6")
+    (source C:/Users/Trangar/Documents/KiCad/door/door.sch)
+    (date "2018-01-03 08:35:54 PM")
+    (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -18,13 +18,13 @@
     (comp (ref J2)
       (value CONTROL)
       (footprint Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm)
-      (libsource (lib door-cache) (part Conn_01x04))
+      (libsource (lib conn) (part Conn_01x04))
       (sheetpath (names /) (tstamps /))
       (tstamp 5A2BFD4A))
     (comp (ref Q1)
       (value IRF3205)
       (footprint TO_SOT_Packages_THT:TO-220-3_Vertical)
-      (libsource (lib door-cache) (part IRF3205))
+      (libsource (lib transistors) (part IRF3205))
       (sheetpath (names /) (tstamps /))
       (tstamp 5A2BFEDA))
     (comp (ref C2)
@@ -42,7 +42,7 @@
     (comp (ref J3)
       (value ENDPOINT)
       (footprint Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm)
-      (libsource (lib door-cache) (part Conn_01x01))
+      (libsource (lib conn) (part Conn_01x01))
       (sheetpath (names /) (tstamps /))
       (tstamp 5A2C063D))
     (comp (ref R1)
@@ -66,13 +66,13 @@
     (comp (ref J4)
       (value MOTOR)
       (footprint library:screw-terminal-01x02)
-      (libsource (lib door-cache) (part Conn_01x02))
+      (libsource (lib conn) (part Conn_01x02))
       (sheetpath (names /) (tstamps /))
       (tstamp 5A2BFF82))
     (comp (ref J1)
       (value POWER)
       (footprint library:screw-terminal-01x02)
-      (libsource (lib door-cache) (part Conn_01x02))
+      (libsource (lib conn) (part Conn_01x02))
       (sheetpath (names /) (tstamps /))
       (tstamp 5A2BFF50))
     (comp (ref D2)
@@ -82,13 +82,15 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5A2D9211)))
   (libparts
-    (libpart (lib door-cache) (part BUZ11)
+    (libpart (lib transistors) (part BUZ11)
       (aliases
         (alias IRLZ44N)
         (alias IRLIZ44N)
         (alias IRLZ34N)
         (alias IRF3205)
         (alias IRF540N))
+      (description "50V Vds, 30A Id, N-Channel Power MOSFET, TO-220")
+      (docs http://www.fairchildsemi.com/ds/BU/BUZ11.pdf)
       (footprints
         (fp TO?220*))
       (fields
@@ -109,7 +111,9 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib door-cache) (part Conn_01x01)
+    (libpart (lib conn) (part Conn_01x01)
+      (description "Generic connector, single row, 01x01")
+      (docs ~)
       (footprints
         (fp Connector*:*_??x*mm*)
         (fp Connector*:*1x??x*mm*)
@@ -122,7 +126,9 @@
         (field (name Value) Conn_01x01))
       (pins
         (pin (num 1) (name Pin_1) (type passive))))
-    (libpart (lib door-cache) (part Conn_01x02)
+    (libpart (lib conn) (part Conn_01x02)
+      (description "Generic connector, single row, 01x02")
+      (docs ~)
       (footprints
         (fp Connector*:*_??x*mm*)
         (fp Connector*:*1x??x*mm*)
@@ -136,7 +142,9 @@
       (pins
         (pin (num 1) (name Pin_1) (type passive))
         (pin (num 2) (name Pin_2) (type passive))))
-    (libpart (lib door-cache) (part Conn_01x04)
+    (libpart (lib conn) (part Conn_01x04)
+      (description "Generic connector, single row, 01x04")
+      (docs ~)
       (footprints
         (fp Connector*:*_??x*mm*)
         (fp Connector*:*1x??x*mm*)
@@ -188,10 +196,12 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
+    (library (logical conn)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
-    (library (logical door-cache)
-      (uri D:\kiCAD\door\door-cache.lib)))
+    (library (logical transistors)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\transistors.lib")))
   (nets
     (net (code 1) (name "Net-(D1-Pad1)")
       (node (ref J3) (pin 1))
