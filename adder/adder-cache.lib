@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# mini-vertical-slide-switch
+#
+DEF mini-vertical-slide-switch U 0 40 Y Y 1 F N
+F0 "U" 0 0 60 H V C CNN
+F1 "mini-vertical-slide-switch" 100 -150 60 H V C CNN
+F2 "" -150 -50 60 H I C CNN
+F3 "" -150 -50 60 H I C CNN
+DRAW
+S -350 100 350 -100 0 1 0 N
+X Vin 1 0 100 200 U 50 50 1 1 I
+X Vleft 2 150 100 200 U 50 50 1 1 I
+X Vright 3 -150 100 200 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

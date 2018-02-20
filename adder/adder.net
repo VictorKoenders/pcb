@@ -1,0 +1,42 @@
+(export (version D)
+  (design
+    (source D:/kiCAD/adder/adder.sch)
+    (date "20-Feb-18 6:47:51 AM")
+    (tool "Eeschema 4.0.6")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source adder.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref U1)
+      (value mini-vertical-slide-switch)
+      (footprint library:mini-vertical-slide-switch)
+      (libsource (lib GTB) (part mini-vertical-slide-switch))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5A8BB5E7)))
+  (libparts
+    (libpart (lib GTB) (part mini-vertical-slide-switch)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) mini-vertical-slide-switch))
+      (pins
+        (pin (num 1) (name Vin) (type input))
+        (pin (num 2) (name Vleft) (type input))
+        (pin (num 3) (name Vright) (type input)))))
+  (libraries
+    (library (logical GTB)
+      (uri D:\kiCAD\libraries\GTB.lib)))
+  (nets
+    (net (code 1) (name "Net-(U1-Pad1)")
+      (node (ref U1) (pin 1)))
+    (net (code 2) (name "Net-(U1-Pad2)")
+      (node (ref U1) (pin 2)))
+    (net (code 3) (name "Net-(U1-Pad3)")
+      (node (ref U1) (pin 3)))))
