@@ -1,4 +1,4 @@
-update=20-Feb-18 6:28:03 AM
+update=2/21/2018 9:11:41 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -57,5 +57,4 @@ LibName25=siliconi
 LibName26=opto
 LibName27=atmel
 LibName28=contrib
-LibName29=valves
-LibName30=D:/kiCAD/libraries/GTB
+LibName29=D:/Personal/pcb/libraries/GTB
