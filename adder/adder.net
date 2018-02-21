@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source D:/Personal/pcb/adder/adder.sch)
-    (date "2/21/2018 12:04:39 PM")
+    (source C:/Development/pcb/adder/adder.sch)
+    (date "2018-02-21 07:04:45 PM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -263,12 +263,12 @@
         (pin (num 13) (name 4B) (type input))
         (pin (num 14) (name Vcc) (type power_in)))))
   (libraries
-    (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
+    (library (logical GTB)
+      (uri C:\Development\pcb\libraries\GTB.lib))
     (library (logical conn)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
-    (library (logical GTB)
-      (uri D:\Personal\pcb\libraries\GTB.lib)))
+    (library (logical device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib")))
   (nets
     (net (code 1) (name VCC)
       (node (ref U8) (pin 1))

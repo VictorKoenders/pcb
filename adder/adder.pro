@@ -1,4 +1,4 @@
-update=2/21/2018 9:11:41 AM
+update=2018-02-21 07:04:39 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -57,4 +57,4 @@ LibName25=siliconi
 LibName26=opto
 LibName27=atmel
 LibName28=contrib
-LibName29=D:/Personal/pcb/libraries/GTB
+LibName29=GTB
