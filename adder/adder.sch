@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:adder-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,7 +45,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L mini-vertical-slide-switch U3
+L mini-vertical-slide-switch-RESCUE-adder U3
 U 1 1 5A8D4725
 P 3350 1450
 F 0 "U3" H 3350 1450 60  0000 C CNN
@@ -58,7 +59,7 @@ Wire Wire Line
 	3350 1950 3350 1750
 NoConn ~ 3200 1750
 $Comp
-L mini-vertical-slide-switch U5
+L mini-vertical-slide-switch-RESCUE-adder U5
 U 1 1 5A8D472D
 P 5050 1450
 F 0 "U5" H 5050 1450 60  0000 C CNN
@@ -72,7 +73,7 @@ Wire Wire Line
 	5050 1950 5050 1750
 NoConn ~ 4900 1750
 $Comp
-L mini-vertical-slide-switch U8
+L mini-vertical-slide-switch-RESCUE-adder U8
 U 1 1 5A8D4735
 P 6750 1400
 F 0 "U8" H 6750 1400 60  0000 C CNN
@@ -86,7 +87,7 @@ Wire Wire Line
 	6750 1700 6750 2100
 NoConn ~ 6600 1700
 $Comp
-L mini-vertical-slide-switch U12
+L mini-vertical-slide-switch-RESCUE-adder U12
 U 1 1 5A8D473D
 P 8450 1400
 F 0 "U12" H 8450 1400 60  0000 C CNN
@@ -104,7 +105,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 1700 8600 2250
 $Comp
-L mini-vertical-slide-switch U4
+L mini-vertical-slide-switch-RESCUE-adder U4
 U 1 1 5A8D4839
 P 3400 6450
 F 0 "U4" H 3400 6450 60  0000 C CNN
@@ -129,7 +130,7 @@ F 3 "" H 3400 5950 50  0001 C CNN
 $EndComp
 NoConn ~ 3550 6150
 $Comp
-L mini-vertical-slide-switch U6
+L mini-vertical-slide-switch-RESCUE-adder U6
 U 1 1 5A8D4847
 P 5350 6450
 F 0 "U6" H 5350 6450 60  0000 C CNN
@@ -154,7 +155,7 @@ F 3 "" H 5350 5950 50  0001 C CNN
 $EndComp
 NoConn ~ 5500 6150
 $Comp
-L mini-vertical-slide-switch U9
+L mini-vertical-slide-switch-RESCUE-adder U9
 U 1 1 5A8D4855
 P 6850 6450
 F 0 "U9" H 6850 6450 60  0000 C CNN
@@ -179,7 +180,7 @@ F 3 "" H 6850 5950 50  0001 C CNN
 $EndComp
 NoConn ~ 7000 6150
 $Comp
-L mini-vertical-slide-switch U13
+L mini-vertical-slide-switch-RESCUE-adder U13
 U 1 1 5A8D4863
 P 8800 6450
 F 0 "U13" H 8800 6450 60  0000 C CNN
