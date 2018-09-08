@@ -34,27 +34,27 @@
   )
   (placement
     (component LEDs:LED_0805_HandSoldering
-      (place D1 134400 -94100 front 90 (PN A1))
-      (place D2 115400 -94100 front 90 (PN B1))
-      (place D3 130600 -94100 front 90 (PN A2))
-      (place D4 111600 -94100 front 90 (PN B2))
-      (place D5 126800 -94100 front 90 (PN A3))
-      (place D6 107800 -94100 front 90 (PN B3))
-      (place D7 123000 -94100 front 90 (PN A4))
-      (place D8 104000 -94100 front 90 (PN B4))
-      (place D9 130600 -101000 front 0 (PN S1))
-      (place D10 123000 -101000 front 0 (PN S2))
-      (place D11 115400 -101000 front 0 (PN S3))
-      (place D12 107800 -101000 front 0 (PN S4))
+      (place A1 134400 -94100 front 90 (PN A1))
+      (place B1 115400 -94100 front 90 (PN B1))
+      (place A2 130600 -94100 front 90 (PN A2))
+      (place B2 111600 -94100 front 90 (PN B2))
+      (place A3 126800 -94100 front 90 (PN A3))
+      (place B3 107800 -94100 front 90 (PN B3))
+      (place A4 123000 -94100 front 90 (PN A4))
+      (place B4 104000 -94100 front 90 (PN B4))
+      (place S1 130600 -101000 front 0 (PN S1))
+      (place S2 123000 -101000 front 0 (PN S2))
+      (place S3 115400 -101000 front 0 (PN S3))
+      (place S4 107800 -101000 front 0 (PN S4))
     )
     (component Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm
-      (place J1 138200 -80000 front 0 (PN AIN))
-      (place J2 100000 -80000 front 0 (PN BIN))
-      (place J5 123000 -105350 front 270 (PN SOUT))
+      (place AIN 138200 -80000 front 0 (PN AIN))
+      (place BIN 100000 -80000 front 0 (PN BIN))
+      (place SOUT 123000 -105350 front 270 (PN SOUT))
     )
     (component Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm
-      (place J3 138200 -94500 front 0 (PN VIN))
-      (place J4 100000 -94500 front 0 (PN VOUT))
+      (place GIN 138200 -94500 front 0 (PN VIN))
+      (place GOUT 100000 -94500 front 0 (PN VOUT))
     )
     (component Resistors_SMD:R_0805_HandSoldering
       (place R1 134400 -89300 front 90 (PN R))
@@ -65,33 +65,33 @@
       (place R7 123000 -89300 front 90 (PN R))
       (place R9 130600 -98500 front 180 (PN S1))
       (place R10 123000 -98500 front 180 (PN S2))
-      (place R12 107800 -98500 front 0 (PN S4))
+      (place R12 107790 -98490 front 180 (PN S4))
     )
     (component Resistors_SMD:R_0805_HandSoldering::1
       (place R6 107800 -89300 front 90 (PN R))
     )
     (component Resistors_SMD:R_0805_HandSoldering::2
-      (place R8 104000 -89300 front 270 (PN R))
+      (place R8 103990 -89300 front 90 (PN R))
     )
     (component Resistors_SMD:R_0805_HandSoldering::3
-      (place R11 115400 -98500 front 0 (PN S3))
+      (place R11 115420 -98460 front 180 (PN S3))
     )
     (component "library:mini-vertical-slide-switch"
-      (place U1 134400 -82500 front 90 (PN A1))
-      (place U2 115400 -82500 front 90 (PN B1))
-      (place U4 130600 -82500 front 90 (PN A2))
-      (place U5 111600 -82500 front 90 (PN B2))
-      (place U7 126800 -82500 front 90 (PN A3))
-      (place U8 107800 -82500 front 90 (PN B3))
-      (place U10 123000 -82500 front 90 (PN A4))
-      (place U11 104000 -82500 front 90 (PN B4))
+      (place IA1 134400 -82500 front 90 (PN A1))
+      (place IB1 115400 -82500 front 90 (PN B1))
+      (place IA2 130600 -82500 front 90 (PN A2))
+      (place IB2 111600 -82500 front 90 (PN B2))
+      (place IA3 126800 -82500 front 90 (PN A3))
+      (place IB3 107800 -82500 front 90 (PN B3))
+      (place IA4 123000 -82500 front 90 (PN A4))
+      (place IB4 104000 -82500 front 90 (PN B4))
     )
     (component library:ssop14
-      (place U3 106500 -102500 back 0 (PN XOR))
-      (place U6 131700 -91800 back 0 (PN XOR))
-      (place U9 131700 -102500 back 0 (PN AND))
-      (place U12 106500 -91800 back 180 (PN AND))
-      (place U13 119200 -96050 back 180 (PN OR))
+      (place XORB 106490 -91780 back 0 (PN XOR))
+      (place XORA 131700 -91800 back 0 (PN XOR))
+      (place ANDA 131700 -102500 back 0 (PN AND))
+      (place AND 106490 -102490 back 180 (PN ANDB))
+      (place OR 119200 -96050 back 180 (PN OR))
     )
   )
   (library
@@ -275,135 +275,136 @@
   )
   (network
     (net GND
-      (pins D1-1 D2-1 D3-1 D4-1 D5-1 D6-1 D7-1 D8-1 D9-1 D10-1 D11-1 D12-1 J3-1 J4-1
-        U1-2 U2-2 U3-7 U4-2 U5-2 U6-7 U7-2 U8-2 U9-7 U10-2 U11-2 U12-7 U13-7)
+      (pins A1-1 B1-1 A2-1 B2-1 A3-1 B3-1 A4-1 B4-1 S1-1 S2-1 S3-1 S4-1 GIN-1 GOUT-1
+        IA1-2 IB1-2 XORB-7 IA2-2 IB2-2 XORA-7 IA3-2 IB3-2 ANDA-7 IA4-2 IB4-2 AND-7
+        OR-7)
     )
     (net /S1
-      (pins R9-2 U3-6 J5-1)
+      (pins R9-2 XORB-6 SOUT-1)
     )
     (net /B1
-      (pins J2-1 R2-2 U2-1 U3-2 U9-2)
+      (pins BIN-1 R2-2 IB1-1 XORB-2 ANDA-2)
     )
     (net /A1
-      (pins J1-1 R1-2 U1-1 U3-1 U9-1)
+      (pins AIN-1 R1-2 IA1-1 XORB-1 ANDA-1)
     )
     (net /S2
-      (pins R10-2 U3-11 J5-2)
+      (pins R10-2 XORB-11 SOUT-2)
     )
     (net /B2
-      (pins J2-2 R4-2 U3-10 U5-1 U9-10)
+      (pins BIN-2 R4-2 XORB-10 IB2-1 ANDA-10)
     )
     (net /A2
-      (pins J1-2 R3-2 U3-9 U4-1 U9-9)
+      (pins AIN-2 R3-2 XORB-9 IA2-1 ANDA-9)
     )
     (net /A3
-      (pins J1-3 R5-2 U6-1 U7-1 U12-1)
+      (pins AIN-3 R5-2 XORA-1 IA3-1 AND-1)
     )
     (net /B4
-      (pins J2-4 R8-2 U6-10 U11-1 U12-10)
+      (pins BIN-4 R8-2 XORA-10 IB4-1 AND-10)
     )
     (net /A4
-      (pins J1-4 R7-2 U6-9 U10-1 U12-9)
+      (pins AIN-4 R7-2 XORA-9 IA4-1 AND-9)
     )
     (net /S4
-      (pins R12-2 U6-11 J5-4)
+      (pins R12-2 XORA-11 SOUT-4)
     )
     (net /CIN
-      (pins J3-2 U3-4 U9-4)
+      (pins GIN-2 XORB-4 ANDA-4)
     )
     (net /COUT
-      (pins J4-2 U6-13 U13-11)
+      (pins GOUT-2 XORA-13 OR-11)
     )
     (net /C1
-      (pins U3-13 U9-13 U13-3)
+      (pins XORB-13 ANDA-13 OR-3)
     )
     (net /C3
-      (pins U12-13 U13-8)
+      (pins AND-13 OR-8)
     )
     (net /C2
-      (pins U6-4 U12-4 U13-6)
+      (pins XORA-4 AND-4 OR-6)
     )
     (net /B3
-      (pins J2-3 R6-2 U6-2 U8-1 U12-2)
+      (pins BIN-3 R6-2 XORA-2 IB3-1 AND-2)
     )
     (net /S3
-      (pins R11-2 U6-6 J5-3)
+      (pins R11-2 XORA-6 SOUT-3)
     )
     (net +5V
-      (pins J3-3 J4-3 U1-3 U2-3 U3-14 U4-3 U5-3 U6-14 U7-3 U8-3 U9-14 U10-3 U11-3
-        U12-14 U13-14)
+      (pins GIN-3 GOUT-3 IA1-3 IB1-3 XORB-14 IA2-3 IB2-3 XORA-14 IA3-3 IB3-3 ANDA-14
+        IA4-3 IB4-3 AND-14 OR-14)
     )
     (net "Net-(D1-Pad2)"
-      (pins D1-2 R1-1)
+      (pins A1-2 R1-1)
     )
     (net "Net-(D2-Pad2)"
-      (pins D2-2 R2-1)
+      (pins B1-2 R2-1)
     )
     (net "Net-(D3-Pad2)"
-      (pins D3-2 R3-1)
+      (pins A2-2 R3-1)
     )
     (net "Net-(D4-Pad2)"
-      (pins D4-2 R4-1)
+      (pins B2-2 R4-1)
     )
     (net "Net-(D5-Pad2)"
-      (pins D5-2 R5-1)
+      (pins A3-2 R5-1)
     )
     (net "Net-(D6-Pad2)"
-      (pins D6-2 R6-1)
+      (pins B3-2 R6-1)
     )
     (net "Net-(D7-Pad2)"
-      (pins D7-2 R7-1)
+      (pins A4-2 R7-1)
     )
     (net "Net-(D8-Pad2)"
-      (pins D8-2 R8-1)
+      (pins B4-2 R8-1)
     )
     (net "Net-(D9-Pad2)"
-      (pins D9-2 R9-1)
+      (pins S1-2 R9-1)
     )
     (net "Net-(D10-Pad2)"
-      (pins D10-2 R10-1)
+      (pins S2-2 R10-1)
     )
     (net "Net-(D11-Pad2)"
-      (pins D11-2 R11-1)
+      (pins S3-2 R11-1)
     )
     (net "Net-(D12-Pad2)"
-      (pins D12-2 R12-1)
+      (pins S4-2 R12-1)
     )
     (net /XAB1
-      (pins U3-5 U3-3 U9-5)
+      (pins XORB-5 XORB-3 ANDA-5)
     )
     (net /XAB2
-      (pins U3-12 U3-8 U9-12)
+      (pins XORB-12 XORB-8 ANDA-12)
     )
     (net /XAB3
-      (pins U6-5 U6-3 U12-5)
+      (pins XORA-5 XORA-3 AND-5)
     )
     (net /XAB4
-      (pins U6-12 U6-8 U12-12)
+      (pins XORA-12 XORA-8 AND-12)
     )
     (net /XAAB1
-      (pins U9-6 U13-2)
+      (pins ANDA-6 OR-2)
     )
     (net /AAB1
-      (pins U9-3 U13-1)
+      (pins ANDA-3 OR-1)
     )
     (net /AAB2
-      (pins U9-8 U13-4)
+      (pins ANDA-8 OR-4)
     )
     (net /XAAB2
-      (pins U9-11 U13-5)
+      (pins ANDA-11 OR-5)
     )
     (net /XAAB3
-      (pins U12-6 U13-9)
+      (pins AND-6 OR-9)
     )
     (net /AAB3
-      (pins U12-3 U13-10)
+      (pins AND-3 OR-10)
     )
     (net /AAB4
-      (pins U12-8 U13-13)
+      (pins AND-8 OR-13)
     )
     (net /XAAB4
-      (pins U12-11 U13-12)
+      (pins AND-11 OR-12)
     )
     (class kicad_default "" +5V /A1 /A2 /A3 /A4 /AAB1 /AAB2 /AAB3 /AAB4 /B1
       /B2 /B3 /B4 /C1 /C2 /C3 /CIN /COUT /S1 /S2 /S3 /S4 /XAAB1 /XAAB2 /XAAB3
