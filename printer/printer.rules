@@ -1,0 +1,104 @@
+
+(rules PCB printer
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1982)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 400.0)
+    (clear 400.2)
+    (clear 200.0 (type smd_to_turn_gap))
+    (clear 800.2 (type default_12v))
+    (clear 100.0 (type smd_smd))
+    (clear 800.2 (type smd_12v))
+    (clear 800.2 (type "kicad_default"_12v))
+    (clear 800.2 (type 12v_12v))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-12v" "Via[0-1]_800:400_um" 12v
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    12v "Via[0-1]_800:400_um-12v"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(A1-Pad3)" "Net-(A1-Pad4)" "Net-(A1-Pad5)" "Net-(A1-Pad6)" "/x_dir" "/x_step" GND /3V3
+    "/z1_dir" "/z1_step" "Net-(A2-Pad6)" "Net-(A2-Pad5)" "Net-(A2-Pad4)" "Net-(A2-Pad3)" "Net-(A3-Pad3)" "Net-(A3-Pad4)"
+    "Net-(A3-Pad5)" "Net-(A3-Pad6)" "/z2_step" "/z2_dir" "Net-(A4-Pad3)" "Net-(A4-Pad4)" "Net-(A4-Pad5)" "Net-(A4-Pad6)"
+    "/y_step" "/y_dir" "Net-(BED1-Pad4)" "/temp_bed" "/toggle_bed" "Net-(IRFZ44N_2-Pad2)" "/toggle_nozzle" "/toggle_nozzle_fan"
+    "Net-(IRFZ44N_3-Pad2)" "Net-(IRFZ44N_4-Pad2)" "/toggle_print_fan" "/temp_nozzle" +5V "/x_end" "/y_end" "Net-(RESET1-Pad1)"
+    "Net-(SD_CARD_1-Pad1)" "/spi_sck" "/spi_mosi" "/spi_miso" "Net-(SERIAL1-Pad5)" /tx /rx "Net-(STM32F103-PadPA8)"
+    "Net-(STM32F103-PadPA11)" "Net-(STM32F103-PadPA12)" "Net-(STM32F103-PadPA15)" "Net-(STM32F103-PadPB3)" "Net-(STM32F103-PadPC13)" "Net-(STM32F103-PadPC14)" "Net-(STM32F103-PadPC15)" "Net-(STM32F103-PadPA4)"
+    "/z_end_1" "/z_end_2"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 12v
+    +12V
+    (clearance_class 12v)
+    (via_rule 12v)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
